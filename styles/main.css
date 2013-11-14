@@ -537,14 +537,14 @@ header .contact {
   color: #d5d5d5;
   font-size: 12px; }
   header .contact i.chat {
-    background: url("../img/home/chat.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/chat.png");
     width: 19px;
     height: 19px;
     display: inline-block;
     float: left;
     margin-right: 4px; }
   header .contact i.contact {
-    background: url("../img/home/email.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/email.png");
     width: 19px;
     height: 19px;
     display: inline-block;
@@ -593,7 +593,7 @@ header .contact {
         width: 13px;
         height: 10px;
         display: inline-block;
-        background: url("../img/home/ok-country.png");
+        background: url("https://s3.amazonaws.com/am-resources/img/home/ok-country.png");
         position: absolute;
         left: 6px;
         top: 4px; }
@@ -607,7 +607,7 @@ header .contact {
       width: 7px;
       height: 14px;
       display: inline-block;
-      background: url("../img/home/button.png");
+      background: url("https://s3.amazonaws.com/am-resources/img/home/button.png");
       background-repeat: no-repeat;
       margin-top: 2px;
       margin-left: 10px;
@@ -726,7 +726,7 @@ header .menu {
     width: 25px;
     height: 34px;
     margin-left: 5px;
-    background: url("../img/home/lupa.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/lupa.png");
     background-repeat: no-repeat;
     text-indent: -99999px;
     border: 0;
@@ -737,7 +737,7 @@ header .menu {
 
 .flight-form {
   box-shadow: 0 0 4px 2px #d1d1d1;
-  background: url("../img/home/flight_background_gradient.png");
+  background: url("https://s3.amazonaws.com/am-resources/img/home/flight_background_gradient.png");
   background-position: left bottom;
   background-repeat: repeat-x;
   border: 1px solid #d1d1d1;
@@ -775,7 +775,7 @@ header .menu {
     height: 62px;
     color: #fff;
     text-align: center;
-    background: url("../img/home/gradient_sprite.png"); }
+    background: url("https://s3.amazonaws.com/am-resources/img/home/gradient_sprite.png"); }
     .flight-form .type li {
     cursor:pointer;
       display: inline-block;
@@ -788,14 +788,14 @@ header .menu {
       height: 44px;
     }
       .flight-form .type li i {
-        background: url("../img/home/fly.png");
+        background: url("https://s3.amazonaws.com/am-resources/img/home/fly.png");
         background-repeat: no-repeat;
         background-position: 0 1px;
         display: block;
         width: 45px;
         height: 54px; }
       .flight-form ul.type li i {
-        background: url("../img/home/fly.png");
+        background: url("https://s3.amazonaws.com/am-resources/img/home/fly.png");
         background-repeat: no-repeat;
         background-position: 0 1px;
         display: block;
@@ -835,7 +835,7 @@ header .menu {
       width: 7px;
       height: 14px;
       display: inline-block;
-      background: url("../img/home/button.png");
+      background: url("https://s3.amazonaws.com/am-resources/img/home/button.png");
       margin-top: 2px;
       margin-left: 4px; }
     .flight-form .field input {
@@ -889,7 +889,7 @@ header .menu {
   .input {
     width: 92px;
     height: 25px;
-    background: url("../img/home/select2.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/select2.png");
     background-repeat:no-repeat;
     cursor: pointer;
     position: relative;
@@ -929,7 +929,7 @@ header .menu {
         right: 0;
         top: 0;
         position: absolute;
-        background: url("../img/home/select2.png");
+        background: url("https://s3.amazonaws.com/am-resources/img/home/select2.png");
         background-position: right;
       }
   .flight-form .submit {
@@ -968,7 +968,7 @@ header .menu {
   .flight-form a:hover {
     color: #515252;}
   .flight-form i {
-    background: url("../img/home/check.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/check.png");
     width: 35px;
     height: 23px;
     display: inline-block;
@@ -999,7 +999,7 @@ header .menu {
       width: 25px;
       height: 25px;
       display: inline-block;
-      background: url("../img/home/carousel_buttons.png"); }
+      background: url("https://s3.amazonaws.com/am-resources/img/home/carousel_buttons.png"); }
     #main .carousel .buttons a:hover {
       text-decoration: none;
     }
@@ -1051,7 +1051,7 @@ header .menu {
       width: 15px;
       height: 12px;
       display: inline-block;
-      background: url("../img/home/ok.png");
+      background: url("https://s3.amazonaws.com/am-resources/img/home/ok.png");
       margin-right: 7px;
       line-height: 10px; }
     #main .travels button.buy:hover {
@@ -1104,7 +1104,7 @@ header .menu {
   margin-left: 5px;
 }
 #main .services .select .input{
-  background: url("../img/home/big-select.png");
+  background: url("https://s3.amazonaws.com/am-resources/img/home/big-select.png");
   width: 130px;
 }
 #main .services .select span, #main .services .select ul{
@@ -1130,25 +1130,25 @@ header .menu {
     display: inline-block;
     color: rgb(51, 51, 51); }
   #main .services h4.invoice i {
-    background: url("../img/home/invoice.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/invoice.png");
     height: 24px;
     width: 24px;
     display: inline-block;
     float: left; }
   #main .services h4.flight i {
-    background: url("../img/home/flight.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/flight.png");
     height: 25px;
     width: 25px;
     display: inline-block;
     float: left; }
   #main .services h4.baggage i {
-    background: url("../img/home/baggage.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/baggage.png");
     height: 24px;
     width: 23px;
     display: inline-block;
     float: left; }
   #main .services h4.check-in i{
-    background: url("../img/home/check-service.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/check-service.png");
     width: 24px;
     height: 16px;
     display: inline-block;
@@ -1206,7 +1206,7 @@ header .menu {
     bottom: -3px;
     left: 50%;
     margin-left: -42px;
-    background: url("../img/home/spiner.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/spiner.png");
     background-repeat: no-repeat;
   }
   #main .flights .img {
@@ -1253,39 +1253,39 @@ header .menu {
     top:3px;
     left: 0; }
   #main .navegation i.icon_tw {
-    background: url("../img/home/twitter.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/twitter.png");
     background-repeat: no-repeat;
     height: 16px; }
   #main .navegation i.icon_fb {
-    background: url("../img/home/facebook.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/facebook.png");
     background-repeat: no-repeat;
     height: 21px; }
   #main .navegation i.icon_yt {
-    background: url("../img/home/youtube.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/youtube.png");
     background-repeat: no-repeat;
     height: 18px; }
   #main .navegation i.icon_en {
-    background: url("../img/home/mail.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/mail.png");
     background-repeat: no-repeat;
     height: 14px; }
       #main .navegation i.twitter {
-    background: url("../img/home/twitter.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/twitter.png");
     background-repeat: no-repeat;
     height: 16px; }
   #main .navegation i.facebook {
-    background: url("../img/home/facebook.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/facebook.png");
     background-repeat: no-repeat;
     height: 21px; }
   #main .navegation i.youtube {
-    background: url("../img/home/youtube.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/youtube.png");
     background-repeat: no-repeat;
     height: 18px; }
   #main .navegation i.mail {
-    background: url("../img/home/mail.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/mail.png");
     background-repeat: no-repeat;
     height: 14px; }
   #main .navegation i.inv {
-    background: url("../img/home/inv.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/inv.png");
     height: 15px;
     width: 16px;
     display: inline-block;
@@ -1335,7 +1335,7 @@ header .menu {
     line-height: 11px;
     padding: 2px 0; }
   #main .navegation .span2 + .span2 + .span2 + .span2{
-    background: url("../img/home/reg.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/reg.png");
     background-repeat: no-repeat;
     background-position: 15px bottom;
   }
@@ -1370,27 +1370,27 @@ header .menu {
     #main footer .logos i {
       margin-left: 8px; }
   #main footer i.esr {
-    background: url("../img/home/esr.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/esr.png");
     width: 67px;
     height: 26px;
     display: inline-block; }
   #main footer i.imipci {
-    background: url("../img/home/imipci.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/imipci.png");
     width: 50px;
     height: 26px;
     display: inline-block; }
   #main footer i.trip {
-    background: url("../img/home/trip.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/trip.png");
     width: 114px;
     height: 20px;
     display: inline-block; }
   #main footer i.master {
-    background: url("../img/home/master.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/master.png");
     width: 75px;
     height: 26px;
     display: inline-block; }
   #main footer i.visa {
-    background: url("../img/home/visa.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/visa.png");
     width: 61px;
     height: 26px;
     display: inline-block; }
@@ -1475,7 +1475,7 @@ padding: 5px 0 5px 10px;
 font: 14px Helvetica, Arial, Tahoma, Verdana;
 color: #003263;
 text-decoration: none;
-background-image: url('../img/home/aeromexico_modal_sprite.png');
+background-image: url('https://s3.amazonaws.com/am-resources/img/home/aeromexico_modal_sprite.png');
 background-repeat: no-repeat;
 background-position: right 0;
   transition:background-color .1s linear;
@@ -1509,7 +1509,7 @@ background-position: right 0;
   color: #999;
   font: 11px Helvetica, Arial, Tahoma, Verdana;
   text-align: left;
-  background-image: url('../img/home/aeromexico_modal_sprite.png');
+  background-image: url('https://s3.amazonaws.com/am-resources/img/home/aeromexico_modal_sprite.png');
   background-repeat: no-repeat;
   padding: 0 5px 1px 13px;
 }
@@ -1546,7 +1546,7 @@ background-position: right 0;
   font-size: 11px;
   font-weight: normal;
   text-decoration: none;
-  background-image: url('../img/home/aeromexico_modal_sprite.png');
+  background-image: url('https://s3.amazonaws.com/am-resources/img/home/aeromexico_modal_sprite.png');
   background-repeat: no-repeat;
       transition: background-color .05s linear;
       -o-transition: background-color .05s linear;
@@ -1612,12 +1612,12 @@ background-position: right 0;
   margin: 2px 0;
   display: block;
   padding: 4px 2px 4px 12px;
-  background-image: url('../img/home/aeromexico_modal_sprite.png');
+  background-image: url('https://s3.amazonaws.com/am-resources/img/home/aeromexico_modal_sprite.png');
   background-repeat: no-repeat;
   color: #666;
 }
 .select_city_msg p .icon{
-  background-image: url('../img/home/aeromexico_modal_sprite.png');
+  background-image: url('https://s3.amazonaws.com/am-resources/img/home/aeromexico_modal_sprite.png');
   background-repeat: no-repeat;
   display: block;
   float: left;
@@ -1722,7 +1722,7 @@ span.ui-helper-hidden-accessible{
   position: relative;
   left: 1px;
   display: block;
-  background: url('../img/home/aeromexico_icons_sprite.png') no-repeat -48px -364px;
+  background: url('https://s3.amazonaws.com/am-resources/img/home/aeromexico_icons_sprite.png') no-repeat -48px -364px;
   width: 14px;
   height: 15px;
 }
@@ -1815,22 +1815,22 @@ span.ui-helper-hidden-accessible{
   margin-top:-5px
 }
 .ui-datepicker .ui-datepicker-prev span{
-  background:transparent url("../img/home/aeromexico_arrows.png") 0 0 no-repeat
+  background:transparent url("https://s3.amazonaws.com/am-resources/img/home/aeromexico_arrows.png") 0 0 no-repeat
 }
 .ui-datepicker .ui-datepicker-prev-hover span{
-  background:url("../img/home/aeromexico_arrows.png") 0 -23px no-repeat
+  background:url("https://s3.amazonaws.com/am-resources/img/home/aeromexico_arrows.png") 0 -23px no-repeat
 }
 .ui-datepicker .ui-datepicker-prev.ui-state-disabled span{
-  background:transparent url("../img/home/aeromexico_arrows.png") 0 0 no-repeat
+  background:transparent url("https://s3.amazonaws.com/am-resources/img/home/aeromexico_arrows.png") 0 0 no-repeat
 }
 .ui-datepicker .ui-datepicker-next span{
-  background:transparent url("../img/home/aeromexico_arrows.png") 0 -89px no-repeat
+  background:transparent url("https://s3.amazonaws.com/am-resources/img/home/aeromexico_arrows.png") 0 -89px no-repeat
 }
 .ui-datepicker .ui-datepicker-next-hover span{
-  background:url("../img/home/aeromexico_arrows.png") 0 -89px no-repeat
+  background:url("https://s3.amazonaws.com/am-resources/img/home/aeromexico_arrows.png") 0 -89px no-repeat
 }
 .ui-datepicker .ui-datepicker-next.ui-state-disabled span{
-  background:transparent url("../img/home/aeromexico_arrows.png") 0 -65px no-repeat
+  background:transparent url("https://s3.amazonaws.com/am-resources/img/home/aeromexico_arrows.png") 0 -65px no-repeat
 }
 .ui-datepicker .ui-datepicker-title{
   color:#fff;
@@ -1920,14 +1920,14 @@ autocomplete-option{
   margin: 2px 0;
   display: block;
   padding: 4px 2px 4px 12px;
-  background-image: url('../img/home/aeromexico_modal_sprite.png');
+  background-image: url('https://s3.amazonaws.com/am-resources/img/home/aeromexico_modal_sprite.png');
   background-repeat: no-repeat;
   color: #666;
   font-size: 11px;
   text-transform: none;
 }
 .select_city_msg p .icon{
-  background-image: url('../img/home/aeromexico_modal_sprite.png');
+  background-image: url('https://s3.amazonaws.com/am-resources/img/home/aeromexico_modal_sprite.png');
   background-repeat: no-repeat;
   display: block;
   float: left;
@@ -2082,7 +2082,7 @@ autocomplete-option{
   text-decoration: none;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background: #0e85c9 url('../img/aeromexico_gradients_sprite.png') repeat-x 0 -400px;
+  background: #0e85c9 url('https://s3.amazonaws.com/am-resources/img/aeromexico_gradients_sprite.png') repeat-x 0 -400px;
   outline: 0;
   cursor: pointer;
 }
@@ -2176,7 +2176,7 @@ opacity:1;
     bottom: -3px;
     left: 50%;
     margin-left: -42px;
-    background: url("../img/home/spiner.png");
+    background: url("https://s3.amazonaws.com/am-resources/img/home/spiner.png");
     background-repeat: no-repeat;
   }
   
@@ -2188,7 +2188,7 @@ opacity:1;
   margin:17px 0px 0px 9px;
   position: absolute;
   border-radius:5px;
-  background: url("../img/contador/aeromexico_contador_cronometro_bg.png");
+  background: url("https://s3.amazonaws.com/am-resources/img/contador/aeromexico_contador_cronometro_bg.png");
   background-position: -162px -190px;
   padding-top:12px;
   padding-left:4px;
@@ -2246,7 +2246,7 @@ width: 100%; height: 1px; position: relative;
     margin: 0 2px;
     width: 25px;
     height: 36px;
-    background: url('../img/contador/aeromexico_contador_cronometro_bg.png') no-repeat;
+    background: url('https://s3.amazonaws.com/am-resources/img/contador/aeromexico_contador_cronometro_bg.png') no-repeat;
 }
 .slide_contador span.image0 { background-position: -160px -277px; }
 .slide_contador span.image1 { background-position: -198px -277px; width: 15px; margin: 0 6px;}
@@ -2530,7 +2530,7 @@ section#info ul{
   margin-top: 30px;
 }
 .services-sidebar i{
-  background: url("../img/home/services-sprite.png");
+  background: url("https://s3.amazonaws.com/am-resources/img/home/services-sprite.png");
   display: block;
   width: 31px;
 }
@@ -2639,7 +2639,7 @@ section#info .info-menu{
   width: 100%;
   box-shadow: 0 0 2px 2px #E4E4E4;
   border-radius: 3px;
-  background: url("../img/info/deg.png");
+  background: url("https://s3.amazonaws.com/am-resources/img/info/deg.png");
   background-position: left top;
   background-repeat: repeat-x;
   overflow: hidden;
@@ -2671,7 +2671,7 @@ section#info .info-menu li + li a{
 }
 section#info .info-menu i{
   display: inline-block;
-  /*background: url("../img/info/info-sprite.png");*/
+  /*background: url("https://s3.amazonaws.com/am-resources/img/info/info-sprite.png");*/
   /*background-repeat: no-repeat;*/
   /*margin: 0 4px;*/
 }/*
@@ -2802,7 +2802,7 @@ section#info .sections a:hover{
   position: relative;
 }
 #tickets .submenujs .tg{
-  background: url("../img/tickets/triangle.png");
+  background: url("https://s3.amazonaws.com/am-resources/img/tickets/triangle.png");
   background-repeat: no-repeat;
   background-position: left top;
   width: 9px;
@@ -2929,7 +2929,7 @@ section#info .sections a:hover{
   padding-left: 2px;
   box-shadow: 0 0 2px 2px #E4E4E4;
   border-radius: 3px;
-  background: url("../img/info/deg.png");
+  background: url("https://s3.amazonaws.com/am-resources/img/info/deg.png");
   background-position: left top;
   background-repeat: repeat-x;
   overflow: hidden;
@@ -2959,7 +2959,7 @@ section#info .sections a:hover{
   float: left;
 }
 .section-content .info-menu li:hover{
-  background: url("../img/info/deg.png"); 
+  background: url("https://s3.amazonaws.com/am-resources/img/info/deg.png"); 
   background-position: left bottom;
 }
 .section-content .info-menu li div, .section-content .submenu li div{
@@ -2974,7 +2974,7 @@ section#info .sections a:hover{
 }
 .section-content .submenu i, .section-content .info-menu i{
   display: inline-block;
-  background: url("../img/info/info-sprite.png");
+  background: url("https://s3.amazonaws.com/am-resources/img/info/info-sprite.png");
   background-repeat: no-repeat;
   margin: 0 3px;
   float: left;
@@ -3947,7 +3947,7 @@ body.pink header .bar{
   background-color: #B2365D;}
 
 body.pink .flight-form .type{
-  background: url("../img/home/gradient_pink.png");}
+  background: url("https://s3.amazonaws.com/am-resources/img/home/gradient_pink.png");}
 
 body.pink #main .travels button.buy{
   background-color: #FF6696;}
@@ -3967,7 +3967,7 @@ body.pink .countries ul{
 
 body.pink header .contact .countries span i, body.pink header .contact i.chat, body.pink header .contact i.contact, body.pink .flight-form .field i.button, body.pink .flight-form i, body.pink #main .travels button.buy i, body.pink #main .services h4.invoice i, body.pink #main .services h4.flight i, 
 body.pink #main .services h4.check-in i, body.pink header .pink-ribbon{
-  background: url("../img/home/SpriteRosa2.png");
+  background: url("https://s3.amazonaws.com/am-resources/img/home/SpriteRosa2.png");
   background-repeat: no-repeat;}
 
 body.pink .flight-form i {
@@ -4078,13 +4078,13 @@ body.pink header .menu .submenu ul li + li a{
 /* Friendly */
 
 body.friendly .friendly_top_bar{
-  background: url("../img/home/friendly_topbar.png");
+  background: url("https://s3.amazonaws.com/am-resources/img/home/friendly_topbar.png");
   background-repeat: repeat-y 30%;
   height: 4px;}
 
 
 body.friendly .countries .country_cont .aeromexico_fr{
-  background: url("../img/home/aeromexico_fr.png");
+  background: url("https://s3.amazonaws.com/am-resources/img/home/aeromexico_fr.png");
   position:absolute;
   width:19px;
   height:19px;
@@ -4189,7 +4189,7 @@ header .menu .input-text {
 
 header .menuError .button {
   background-repeat: no-repeat;
-  background: url("../img/home/lupa.png");
+  background: url("https://s3.amazonaws.com/am-resources/img/home/lupa.png");
   border: 0;
   border: 0px none;
   box-shadow: none;
