@@ -202,3 +202,130 @@ $(document).on('click', '.autocomplete-option a', function(a){
     a.stopPropagation();
 });
 $(document).on('click', ".ui-datepicker-prev, .ui-datepicker-next", function(a){ a.preventDefault(); });
+// modal boxes
+(function(){
+    
+    var url = window.location.pathname.split( '/' ),
+        modalBox = function(){
+        var shade = "<div class='serv-shadow'></div>",
+            body = "<div class='modal-serv'><div class='content'><h4><i></i></h4><span class='close-mod'>x</span><form action=''></form></div></div>",
+            invoice = {
+                element: 'invoice',
+                inputs: ["<input type='text' placeholder='Ingresa tu código de reservación'>",
+                        "<input type='text' placeholder='Escribe tus apellidos'>"],
+                button: "<input class='buy' type='submit' value='Consultar'>",
+                height: '130px'
+            },
+            flight = {
+                element: 'flight',
+                inputs: ["<input type='text' placeholder='Ingresa tu código de reservación'>",
+                        "<div class='style-select'><select><option value='0' selected>14 de octubre 2013</option></select></div>"],
+                button: "<input class='buy' type='submit' value='Consultar'>",
+                height: '130px'
+            },
+            check = {
+                element: 'check-in',
+                inputs: ["<input type='text' placeholder='Escribe tus apellidos'>",
+                        "<div class='style-select'><select><option value='0' selected>Ciudad de origen</option></select></div>",
+                        "<div class='option'><input type='radio' name='group1' value='clave'><span>Clave de reservación</span></div>",
+                        "<div class='option'><input type='radio' name='group1' value='club'><span>Número de Club Premier</span></div>",
+                        "<input type='text' placeholder='Introduce tu número'>"],
+                button: "<input class='buy' type='submit' value='Check-In'>",
+                height: '200px'
+            },
+            change = {
+                element: 'changes',
+                inputs: ["<input type='text' placeholder='Ingresa tu clave de reservación'>",
+                        "<input type='text' placeholder='Escribe tus apellidos'>"],
+                button: "<input class='buy' type='submit' value='Consultar'>",
+                height: '130px'
+            },
+            reserv = {
+                element: 'reserv',
+                inputs: ["<input type='text' placeholder='Ingresa tu código de reservación'>",
+                        "<input type='text' placeholder='Escribe tus apellidos'>"],
+                button: "<input class='buy' type='submit' value='Consultar'>",
+                height: '130px'
+            },
+            services = [invoice, flight, check, change, reserv];
+        //event to create modal box
+        $(".services h4 a").on('click', function(e){
+            e.preventDefault();
+            var winHeight,
+                title = $(this).parent().text(),
+                className = $(this).parent().attr('class'),
+                $body = $("body"),
+                $modal,
+                $shadow,
+                i = services.length;
+            //verify if window.innerHeight is defined if not, then use document.documentElement.clientWidth to calculate height
+            (window.innerHeight === undefined) ? (winHeight = document.documentElement.clientWidth/4) : (winHeight = (window.innerHeight/3)+20);
+            // append the shadow and the principal structure of modal box
+            $body.append(shade);
+            $body.append(body);
+            // append the title for modal box
+            $(".modal-serv .content h4").append(title);
+
+            $modal = $('.modal-serv');
+            $shadow = $(".serv-shadow");
+
+            while(i--) {
+                var service = services[i];
+                //select the correct content for each modal box
+                if (service.element === className) {
+                    //add the correct class for icon element
+                    $('.modal-serv .content h4 i').addClass(service.element);
+                    // add inputs inside form
+                    for (var x = 0, y = service.inputs.length; x < y; x++) {
+                        $('.modal-serv .content form').append(service.inputs[x]);
+                    };
+                    //add the submit button
+                    $('.modal-serv .content form').append(service.button);
+                    //resize modal box 
+                    $modal.css('height',service.height);
+                };
+                
+            };
+            //use jquery to put placeholders when is  IE8 or IE9
+            if ((navigator.appVersion.indexOf("MSIE 8.")!=-1) || (navigator.appVersion.indexOf("MSIE 9.")!=-1)) {
+                $('input[placeholder]').each(function(){  
+                    var input = $(this);        
+                    $(input).val(input.attr('placeholder'));
+                    $(input).focus(function(){
+                         if (input.val() == input.attr('placeholder')) {
+                             input.val('');
+                         }
+                    });
+                    $(input).blur(function(){
+                        if (input.val() == '' || input.val() == input.attr('placeholder')) {
+                            input.val(input.attr('placeholder'));
+                        }
+                    });
+                });
+            };
+            //centered vertically to modal box
+            $modal.css('top',$(window).scrollTop()+winHeight);
+            // display shadow and modal box
+            $shadow.fadeIn();
+            $modal.fadeIn();
+            //add event after create modal box
+            closeModal($modal, $shadow);
+        });
+
+        function closeModal(modal, shadow) {
+            //remove shadow and modal box after clicked it
+            $(".modal-serv span.close-mod").on('click', function(){
+                modal.fadeOut(400, function(){
+                    $(this).remove();
+                });
+                shadow.fadeOut(400, function(){
+                    $(this).remove();
+                });
+            });
+        }
+    }
+    //call function: "modalBox", only in mexico's site
+    if (url[1] === 'mx') {
+        modalBox();
+    };
+})();
