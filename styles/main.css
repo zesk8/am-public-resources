@@ -980,6 +980,7 @@ header .menu {
   width: 732px;
   height: 475px;
   left: -1px;
+  overflow: hidden;
   top: -3px; }
   #main .carousel > a {
     display: block;
