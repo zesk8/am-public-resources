@@ -138,20 +138,23 @@
         if(current + 1 >= count) next = 0;
         else next = current + 1;
 
+        items.eq(current).css({
+            "left": "0"
+        });
         items.eq(current).animate({
-            opacity: .3
+            "left": "-100%"
         }, 500, function(){
-            $(this).removeClass("visible");
-            items.eq(next).css('opacity', '.4');
-            items.eq(next).addClass("visible");
-            items.eq(next).animate({
-                opacity: 1
-            }, 500, function(){
-                current = next;
-                slider = setTimeout(function (){
-                    rotationRight();
-                }, time);
-            });
+            $(this).removeClass("visible").attr("style", "");
+        });
+        items.eq(next).css('left', '100%');
+        items.eq(next).addClass("visible");
+        items.eq(next).animate({
+            "left": "0"
+        }, 500, function(){
+            current = next;
+            slider = setTimeout(function (){
+                rotationRight();
+            }, time);
         });
     },
     rotationLeft = function(){
@@ -159,22 +162,23 @@
 
         if(current - 1 < 0) next = count - 1;
         else next = current - 1;
-
+        items.eq(current).css({
+            "left": "0"
+        });
         items.eq(current).animate({
-            opacity: .3
+            "left": "-100%"
         }, 500, function(){
-            $(this).removeClass("visible");
-            items.eq(next).css('opacity', '.4');
-            items.eq(next).addClass("visible");
-            items.eq(next).animate({
-                opacity: 1
-            }, 500, function(){
-                current = next;
-                slider = setTimeout(function (){
-
-                    rotationRight();
-                }, time);
-            });
+            $(this).removeClass("visible").attr("style", "");
+        });
+        items.eq(next).css('left', '100%');
+        items.eq(next).addClass("visible");
+        items.eq(next).animate({
+            "left": "0"
+        }, 500, function(){
+            current = next;
+            slider = setTimeout(function (){
+                rotationRight();
+            }, time);
         });
     };
 
