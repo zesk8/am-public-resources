@@ -215,20 +215,27 @@ $(document).on('click', ".ui-datepicker-prev, .ui-datepicker-next", function(a){
             body = "<div class='modal-serv'><div class='content'><h4><i></i></h4><span class='close-mod'>x</span><form action=''></form></div></div>",
             invoice = {
                 element: 'invoice',
-                inputs: ["<input type='text' placeholder='Ingresa tu código de reservación'>",
-                        "<input type='text' placeholder='Escribe tus apellidos'>"],
+                action: 'https://trip.aeromexico.com/new/login.html',
+                inputs: ["<input type='text' placeholder='Ingresa tu código de reservación' id='pnr' name='pnr' class='Txt'>",
+                        "<input type='text' placeholder='Escribe tus apellidos' id='lastName' name='lastName' class='Txt'>"],
                 button: "<input class='buy' type='submit' value='Consultar'>",
                 height: '130px'
             },
             flight = {
                 element: 'flight',
-                inputs: ["<input type='text' placeholder='Ingresa tu código de reservación'>",
-                        "<div class='style-select'><select><option value='0' selected>14 de octubre 2013</option></select></div>"],
+                action: 'http://tracker.flightview.com/customersetup/esAeroMexico/custom/',
+                inputs: ["<input type='hidden' name='sf_input' value='MEX'>",
+                        "<input type='hidden' name='lang' value='es'>",
+                        "<input type='hidden' name='qtype' value='ByFlight'>",
+                        "<input type='hidden' name='al' value='AM'>",
+                        "<input type='text' placeholder='Ingresa tu código de reservación' name='fn'>",
+                        "<div class='style-select'><select name='depdate' id='depdate'><option value='0' selected>14 de octubre 2013</option></select></div>"],
                 button: "<input class='buy' type='submit' value='Consultar'>",
                 height: '130px'
             },
             check = {
                 element: 'check-in',
+                action: '',
                 inputs: ["<input type='text' placeholder='Escribe tus apellidos'>",
                         "<div class='style-select'><select><option value='0' selected>Ciudad de origen</option></select></div>",
                         "<div class='option'><input type='radio' name='group1' value='clave'><span>Clave de reservación</span></div>",
@@ -239,6 +246,7 @@ $(document).on('click', ".ui-datepicker-prev, .ui-datepicker-next", function(a){
             },
             change = {
                 element: 'changes',
+                action: '',
                 inputs: ["<input type='text' placeholder='Ingresa tu clave de reservación'>",
                         "<input type='text' placeholder='Escribe tus apellidos'>"],
                 button: "<input class='buy' type='submit' value='Consultar'>",
@@ -246,6 +254,7 @@ $(document).on('click', ".ui-datepicker-prev, .ui-datepicker-next", function(a){
             },
             reserv = {
                 element: 'reserv',
+                action: '',
                 inputs: ["<input type='text' placeholder='Ingresa tu código de reservación'>",
                         "<input type='text' placeholder='Escribe tus apellidos'>"],
                 button: "<input class='buy' type='submit' value='Consultar'>",
@@ -274,17 +283,19 @@ $(document).on('click', ".ui-datepicker-prev, .ui-datepicker-next", function(a){
             $shadow = $(".serv-shadow");
 
             while(i--) {
-                var service = services[i];
+                var service = services[i],
+                    $form = $('.modal-serv .content form');
                 //select the correct content for each modal box
                 if (service.element === className) {
+                    $form.attr('action', service.action);
                     //add the correct class for icon element
                     $('.modal-serv .content h4 i').addClass(service.element);
                     // add inputs inside form
                     for (var x = 0, y = service.inputs.length; x < y; x++) {
-                        $('.modal-serv .content form').append(service.inputs[x]);
+                        $form.append(service.inputs[x]);
                     };
                     //add the submit button
-                    $('.modal-serv .content form').append(service.button);
+                    $form.append(service.button);
                     //resize modal box 
                     $modal.css('height',service.height);
                 };
