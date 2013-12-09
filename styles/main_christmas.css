@@ -4407,3 +4407,45 @@ header .menuError .button {
 .btn-grey:hover{
   background: #818d90;
 }
+/*********************************************************************************/
+/*                            Christmas styles                                  */
+/********************************************************************************/
+body.christmas{
+  background: url("https://s3.amazonaws.com/am-resources/img/home/home-back.jpg") top center repeat-x;
+  background-color: none !important;
+ }
+body.christmas  #main{
+  background: url("https://s3.amazonaws.com/am-resources/img/home/footer-back.png") bottom center repeat-x;
+}
+body.christmas #bBaf {
+  background-color: #fff;
+}
+body.christmas .flight-form {
+  border: none;
+}
+body.christmas .flight-form .submit input {
+  background: #ED1C24 !important;
+}
+body.christmas header .menu li a {
+  color: #fff;
+  border-right: 1px solid #fff;
+}
+body.christmas header .menu li .submenu ul li a {
+  border-right: none;
+}
+body.christmas header .menu li a:hover{
+   border-right: none;
+}
+body.christmas #main .navegation {
+  width: 1024px;
+}
+body.christmas #main .flights {
+  width: 1024px;
+}
+body.christmas #main footer{
+  padding-bottom: 135px; 
+  margin-bottom: 0;
+}
+body.christmas .flight-form {
+  box-shadow: 0 0 4px 2px rgba(0,0,0,0.5);
+}

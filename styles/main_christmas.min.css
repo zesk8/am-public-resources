@@ -356,12 +356,12 @@ header .menuError .button{background-repeat:no-repeat;background:url("https://s3
 .serv-shadow{background-color:#000;background-color:rgba(0,0,0,0.5)!important;display:block;display:none;height:100%;position:fixed;top:0;width:100%;z-index:10}
 .modal-serv{background-color:#e3e3e3;border-radius:20px;border:solid 4px #ababab;box-shadow:0 0 9px #000;display:block;left:38%;margin:0 auto;padding:6px;position:absolute;width:350px;z-index:11}
 .modal-serv .content{-moz-box-sizing:border-box;background-color:#fff;border-radius:11px;box-sizing:border-box;height:100%;padding:10px;position:relative;width:100%}
-.modal-serv .content h4{color:#013566;margin:0;padding:0}.modal-serv .content h4 i{background:url("https://s3.amazonaws.com/am-resources/img/home/services.png");display:inline-block;float:left;margin-right:8px;margin-top:-4px}
+.modal-serv .content h4{color:#013566;margin:0;padding:0}.modal-serv .content h4 i{background:url(".https://s3.amazonaws.com/am-resources/img/home/services.png");display:inline-block;float:left;margin-right:8px;margin-top:-4px}
 .modal-serv .content h4 i.invoice{background-position:0 0;height:26px;width:26px}.modal-serv .content h4 i.flight{background-position:-29px 0;height:27px;width:28px}
 .modal-serv .content h4 i.check-in{background-position:-59px 0;height:26px;width:28px}.modal-serv .content h4 i.changes{background-position:-88px 0;height:26px;width:26px}
 .modal-serv .content h4 i.reserv{background-position:-116px 0;height:26px;width:26px}.modal-serv .content span.close-mod{color:#aaa;cursor:pointer;position:absolute;right:15px;top:5px}
 .modal-serv .content form input[type="text"]{border-radius:5px;border:2px solid #ddd;display:block;font-size:.8em;margin:5px 0 15px;padding:9px;width:200px}
-.modal-serv .content form .style-select{background:url("https://s3.amazonaws.com/am-resources/img/home/select-btn.png") no-repeat right;border-radius:5px;border:2px solid #ddd;height:33px;overflow:hidden;width:219px}
+.modal-serv .content form .style-select{background:url(".https://s3.amazonaws.com/am-resources/img/home/select-btn.png") no-repeat right;border-radius:5px;border:2px solid #ddd;height:33px;overflow:hidden;width:219px}
 .modal-serv .content form .style-select select{-moz-appearance:none;-webkit-appearance:none;background:transparent;border-radius:0;border:0;color:#777;font-size:.8em;height:35px;line-height:1;padding:9px;width:250px}
 .modal-serv .content form input[type="submit"]{background:#3c9ef7;border-radius:1.5px;border:0;bottom:10px;color:#fff;font-family:'Verdana';font-size:12px;line-height:12px;padding:5px 9px;position:absolute;right:15px}
 .modal-serv .content form .option{color:#777;display:inline-block;font-size:.9em;margin:10px 10px 2px 0;vertical-align:top}.modal-serv .content form .option span{margin-left:5px}
@@ -370,3 +370,6 @@ header .menuError .button{background-repeat:no-repeat;background:url("https://s3
 .btn-orange.big{font-size: 16px;padding: 7px 31px 7px 18px;width: auto;}.btn-orange:hover{background: #ef4623;}.btn-blue{background: #3c9ef7;border-radius: 1.5px;font-family: 'Verdana';font-size: 12px;line-height: 12px;padding: 3px 14px 5px 5px;}
 .btn-blue:hover{background:#1c75bc}.btn-grey{background:#bfbfbf;border:0;display:inline-block;font-size:12px;height:25px;line-height:25px;width:70px}.btn-grey.big{font-size:16px;height:auto;padding:5px 13px;width:auto}
 .btn-grey.smll{font-size:10px;height:14px;line-height:14px;padding:1px 2px;width:43px}.btn-grey:hover{background:#818d90}
+body.christmas{background:url(https://s3.amazonaws.com/am-resources/img/home/home-back.jpg) top center repeat-x;background-color:none!important}body.christmas #main{background:url(https://s3.amazonaws.com/am-resources/img/home/footer-back.png) bottom center repeat-x}
+body.christmas #bBaf{background-color:#fff}body.christmas .flight-form{border:0}body.christmas .flight-form .submit input{background:#ED1C24!important}body.christmas header .menu li a{color:#fff;border-right:1px solid #fff}
+body.christmas header .menu li .submenu ul li a,body.christmas header .menu li a:hover{border-right:0}body.christmas #main .flights,body.christmas #main .navegation{width:1024px}body.christmas #main footer{padding-bottom:135px;margin-bottom:0}body.christmas .flight-form{box-shadow:0 0 4px 2px rgba(0,0,0,.5)}
